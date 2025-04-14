@@ -23,11 +23,19 @@ header{
 header nav ul{
     list-style: none;
     padding: 0;
+            
     margin: 10px 0;
     display: flex;
 }
 header nav ul li a{
     color: #fff;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+header nav ul li a{
+    color:#fff;
+    text-decoration: none;
     text-transform: uppercase;
     padding: 5px 10px;
 }
@@ -39,7 +47,6 @@ header nav ul a:hover{
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 20px;
-    padding: 20px;
 }
 
 main{
@@ -110,7 +117,10 @@ footer{
     color:#ddd;
     text-decoration: none;
 }
-/* responsividade */
+
+.direitos{
+    margin-top: 100px;/* MARGEM SUPERIOR DE 100px*/
+}
 
 @media(max-width:768px){
     header nav ul{
@@ -122,11 +132,27 @@ footer{
     header nav ul li{
         margin: 0;
     }
+
+    header nav ul li a{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#fff;
+        text-decoration: none;
+    }
     #conteudo{
         grid-template-columns: 1fr;
     }
     aside{
         display: none;
         width: 100%;
+    }
+
+    .footer-content{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
